@@ -1,0 +1,156 @@
+/* poppins font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-rounded/css/uicons-bold-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css");
+
+:root {
+  --popins: "Poppins", sans-serif;
+  --background-color: rgb(28, 28, 28);
+  --background-color-light: rgb(46, 46, 46);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--popins);
+}
+
+body {
+  background-color: rgb(28, 28, 28);
+}
+header {
+  padding: 2rem;
+}
+
+nav {
+  font-weight: 500;
+  color: #6e61b7;
+  background-color: var(--background-color);
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  padding: 1.5rem 2rem;
+  #nav-brand {
+    text-decoration: none;
+    color: #6e61b7;
+    font-size: large;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    a {
+      font-size: smaller;
+      text-decoration: none;
+    }
+    li {
+      padding: 0 1rem;
+      color: #6e61b7;
+    }
+    div {
+      padding: 10px;
+      border-radius: 25px;
+      transition: all 200ms ease-in-out;
+    }
+    div:hover {
+      background-color: var(--background-color-light);
+    }
+  }
+}
+
+#index-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  h1 {
+    color: #514887;
+  }
+  .form-div {
+    font-family: var(--popins);
+    background-color: var(--background-color-light);
+    padding: 1rem 1.25rem;
+    border-radius: 2rem;
+    form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      #post {
+        color: #6e61b7;
+        font-weight: 500;
+        font-size: 16px;
+        background-color: var(--background-color-light);
+        border: none;
+        resize: none;
+        min-width: 500px;
+        height: 24px;
+        overflow: hidden;
+        margin: 0 1rem;
+      }
+      #post:focus {
+        outline: none;
+      }
+      #submit {
+        margin-top: 5px;
+        background: none;
+        border: none;
+        i {
+          font-size: 20px;
+          color: #514887;
+          transition: all 100ms ease-in-out;
+        }
+        i:hover {
+          color: #7c70c2;
+        }
+      }
+      span {
+        color: #514887;
+      }
+    }
+  }
+}
+
+#viewposts-main {
+  min-height: 80vh;
+  h1 {
+    margin: 2rem;
+    color: #6e61b7;
+  }
+  #post-item {
+    margin: 0.75rem 2rem;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 3rem;
+    background-color: var(--background-color-light);
+    border-radius: 10px;
+    p {
+      color: #6e61b7;
+    }
+    button {
+      margin-left: 2rem;
+      background: none;
+      border: none;
+      i {
+        color: red;
+        font-size: larger;
+      }
+    }
+  }
+  hr {
+    margin: auto 2rem;
+  }
+}
+
+footer {
+  min-height: 2.5rem;
+  background-color: var(--background-color);
+  color: #6e61b7;
+  h1 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,17 @@
+<%- include('partials/header.ejs') %>
+<main id="viewposts-main">
+  <% if(locals.posts.length ===0) {%>
+  <h1>Nothing here yet.</h1>
+  <% } else { %>
+  <h1>My To-do's</h1>
+  <% for(let i in posts) { %>
+  <div id="post-item">
+    <p><%= posts[i] %></p>
+    <form action="/remove" method="post">
+      <input type="hidden" name="index" value="<%= i%>" />
+      <button type="submit"><i class="fi fi-br-trash"></i></button>
+    </form>
+  </div>
+  <% } } %>
+</main>
+<%- include('partials/footer.ejs') %>

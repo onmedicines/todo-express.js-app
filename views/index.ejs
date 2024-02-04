@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+<main id="index-main">
+  <% if(noOfPosts!==0) {%>
+  <h1>You have <%= noOfPosts %> To-Do's.</h1>
+  <% }else{ %>
+  <h1>No To-Do's yet.Try creating one👇</h1>
+  <% }%>
+  <div class="form-div">
+    <form action="/submit" method="post">
+      <textarea type="text" name="post" id="post"></textarea>
+      <button type="submit" id="submit">
+        <i class="fi fi-br-paper-plane-top"></i>
+      </button>
+    </form>
+  </div>
+</main>
+<%- include("partials/footer.ejs") %>
