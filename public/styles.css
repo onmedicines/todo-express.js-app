@@ -116,7 +116,7 @@ nav {
 #viewposts-main {
   min-height: 80vh;
   h1 {
-    margin: 2rem 2rem 2rem 0;
+    margin: 2rem;
     color: #6e61b7;
   }
   .heading-box {
@@ -124,6 +124,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin: auto 2rem;
+    h1 {
+      margin: 2rem 2rem 2rem 0;
+      color: #6e61b7;
+    }
     form {
       button {
         background-color: var(--background-color-light);
