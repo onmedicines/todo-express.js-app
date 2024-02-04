@@ -1,6 +1,13 @@
-This is a simple to do list app. features: => you can add things to do in the form of a list item. => you can view all t=your to-dos in one place. => you can individually delete items from the to do app.
+This is a simple to do list app.
 
-how to use:
+Features:
+
+1. you can add things to do in the form of a list item.
+2. you can view all your to-dos in one place.
+3. you can individually delete items from the to do app.
+4. you can delete all items at once
+
+How to use:
 
 1. download all the files.
 2. make sure you have node installed (run "node --version" in terminal).
