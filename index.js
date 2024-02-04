@@ -37,6 +37,12 @@ app.post("/remove", (req, res) => {
     posts: posts,
   });
 });
+app.post("/remove-all", (req, res) => {
+  posts.splice(0, posts.length);
+  res.render("viewposts.ejs", {
+    posts: posts,
+  });
+});
 
 app.listen(port);
 
