@@ -1,13 +1,12 @@
 <%- include("partials/header.ejs") %>
 <main id="index-main">
-  <% if(noOfPosts!==0) {%>
-  <h1>You have <%= noOfPosts %> To-Do's.</h1>
-  <% }else{ %>
-  <h1>No To-Do's yet.Try creating one👇</h1>
-  <% }%>
   <div class="form-div">
     <form action="/submit" method="post">
-      <textarea type="text" name="post" id="post"></textarea>
+      <% if(posts.length !== 0) {%>
+      <textarea type="text" name="post" class="post" placeholder="You have <%= posts.length %> To-Do's"></textarea>
+      <% } else {%>
+      <textarea type="text" name="post" class="post" placeholder="No To-Do's yet. Try creating one."></textarea>
+      <% } %>
       <button type="submit" id="submit">
         <i class="fi fi-br-paper-plane-top"></i>
       </button>
